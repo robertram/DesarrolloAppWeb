@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		/*-----------------Tabla 1-----------------*/
+		table {
+			border-collapse: collapse;
+			width: 20%;
+			height: 50px;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			text-align: center;
+		}
+
+		/*Titulos*/
+		table tr th {
+			background-color: #999c9e;
+			padding: 20px;
+		}
+
+		/*Datos*/
+		table tr td {
+			padding: 20px;
+		}
+
+		/*-----------------Tabla 1-----------------*/
+	</style>
 </head>
+
 <body>
 
 
 	<table>
 
 		<tr>
-			<th>Paises</th>
-			<th>Medallas</th>
+			<th><b>Paises</b></th>
+			<th><b>Medallas</b></th>
 		</tr>
 
 		<tr>
@@ -19,11 +49,81 @@
 			<td>13</td>
 		</tr>
 
-		
+		<tr>
+			<td>China</td>
+			<td>25</td>
+		</tr>
 
-		
-			
+		<tr>
+			<td>España</td>
+			<td>6</td>
+		</tr>
+
+		<tr>
+			<td>Francia</td>
+			<td>3</td>
+		</tr>
+
+
 	</table>
-	
+
+
+	<br>
+	<table class="table2">
+
+		<tr>
+			<th colspan="2" style="background-color: #b3e0ff">A</th>
+			<th style="background-color: #eeee01">B</th>
+			<th style="background-color: #00cc66">C</th>
+		</tr>
+
+		<tr>
+			<td rowspan="3" style="background-color: #999c9e">D</td>
+			<td colspan="2" style="background-color: #dd5801">E</td>
+			<td style="background-color: #0761ee">F</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #00cc66">G</td>
+			<td colspan="2" style="background-color: #e2e7e9">H</td>
+		</tr>
+
+		<tr>
+			<td style="background-color: #0761ee">I</td>
+			<td style="background-color: #ad4501">J</td>
+			<td style="background-color: #9c8321">K</td>
+		</tr>
+
+
+	</table>
+	<br>
+	<table class="table3">
+
+		<tr>
+			<th colspan="2" rowspan="2" style="background-color: #b3e0ff">A</th>
+			<th style="background-color: #eeee01">B</th>
+			<th style="background-color: #00cc66">C</th>
+		</tr>
+
+		<tr>
+			<td colspan="2" style="background-color: #0761ee">D</td>
+
+
+		</tr>
+		<tr>
+			<td colspan="4" style="background-color: #00cc66">E</td>
+		</tr>
+
+		<tr>
+
+			<td style="background-color: #999c9e">F</td>
+			<td style="background-color: #0761ee">G</td>
+			<td colspan="2" style="background-color: #dd5801">H</td>
+		</tr>
+
+
+	</table>
+
 </body>
+
 </html>
