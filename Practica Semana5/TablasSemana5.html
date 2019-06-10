@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		/*-----------------Tabla 1-----------------*/
+	
+
+		table {
+			border-collapse: collapse;
+			width: 20%;
+			height: 50px;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid #eff3f7;
+			text-align: center;
+		}
+
+		/*Titulos*/
+		table tr th {
+			background-color: #babfc4;
+			padding: 20px;
+		}
+
+		table tr th b{
+			text-align: left;
+		}
+
+		/*Datos*/
+		table tr td {
+			padding: 20px;
+			text-align:left;
+		}
+
+		/*-----------------Tabla 1-----------------*/
+
+		.provincia td{
+			background-color: #8e9299;
+		}
+
+		.fecha{
+			background-color: #babfc4;
+			
+		}
+
+
+
+		/*-----------------Tabla 2-----------------*/
+
+		.table2 {
+			border-collapse: collapse;
+			width: 20%;
+			height: 50px;
+		}
+
+		.table2,
+		th,
+		td {
+			border: 1px solid #c6cbd1;
+			text-align: center;
+		}
+
+		/*Titulos*/
+		.table2 tr th {
+			background-color: white;
+			padding: 20px;
+			text-align:center;
+		}
+
+
+
+		/*Datos*/
+		.table2 tr td {
+			padding: 20px;
+			text-align:left;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<table>
+
+		<tr>
+			<h3>Tabla Gastos</h3>
+			<th><b></b></th>
+			<th><b>Comida</b></th>
+			<th><b>Hotel</b></th>
+			<th><b>Transporte</b></th>
+		</tr>
+
+		<tr class="provincia">
+			<td colspan="4">San Jose</td>
+		</tr>
+
+		<tr>
+			<td class="fecha">1 de marzo</td>
+			<td>15</td>
+			<td>120</td>
+			<td>-</td>
+		</tr>
+
+		<tr>
+			<td class="fecha">97 de marzo</td>
+			<td>18</td>
+			<td>120</td>
+			<td>34</td>
+		</tr>
+
+		<tr>
+			<td class="fecha">3 de marzo</td>
+			<td>25</td>
+			<td>120</td>
+			<td>-</td>
+		</tr>
+
+		<tr class="provincia">
+			<td colspan="4">Alajuela</td>
+		</tr>
+
+		<tr>
+			<td class="fecha">4 de marzo</td>
+			<td>10</td>
+			<td>75</td>
+			<td>12</td>
+		</tr>
+
+		<tr>
+			<td class="fecha">5 de marzo</td>
+			<td>12</td>
+			<td>75</td>
+			<td>14</td>
+		</tr>
+
+
+	</table>
+	
+
+
+
+	<table class="table2">
+
+		<tr>
+			<h3>Análisis de Ventas</h3>
+
+			<p>Analisis de Ventas Anuales</p>
+			<th rowspan="2"><b>AÑO</b></th>
+			<th colspan="4"><b>Expansión de Ventas</b></th>
+		</tr>
+
+		<tr>
+			<th ><b>Producto A</b></th>
+			<th ><b>Producto B</b></th>
+			<th ><b>Producto C</b></th>
+			<th ><b>Producto D</b></th>
+		</tr>
+
+		
+
+		<tr>
+			<td class="N">N-3</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+
+		<tr>
+			<td class="N">N-2</td>
+			<td>3</td>
+			<td>5</td>
+			<td>8</td>
+			<td>4</td>
+		</tr>
+
+		<tr>
+			<td class="N">N-1</td>
+			<td>4</td>
+			<td>4</td>
+			<td>7</td>
+			<td>3</td>
+		</tr>
+
+		
+
+		<tr>
+			<td class="N">N</td>
+			<td>5</td>
+			<td>7</td>
+			<td>6</td>
+			<td>2</td>
+		</tr>
+
+		<tr>
+			<th rowspan="2"><b>AÑO</b></th>
+			<th ><b>Producto A</b></th>
+			<th ><b>Producto B</b></th>
+			<th ><b>Producto C</b></th>
+			<th ><b>Producto D</b></th>
+		</tr>
+
+		<tr>
+			
+			<th colspan="4"><b>Expansión de Ventas</b></th>
+		</tr>
+
+
+	</table>
+</body>
+</html>

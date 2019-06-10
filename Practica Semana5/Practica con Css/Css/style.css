@@ -1,0 +1,18 @@
+h3{
+    text-align: center;
+    color: blue;
+}
+h3:hover{
+    color: red;
+}
+
+
+p{
+    text-align: center;
+    border: 5px solid;
+}
+
+p:any{
+    background-color: gray;
+}
+
