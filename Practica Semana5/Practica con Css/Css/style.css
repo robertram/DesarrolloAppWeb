@@ -16,3 +16,16 @@ p:any{
     background-color: gray;
 }
 
+
+div .imagen{
+    width: 1200;
+    height: 630;
+    background-image: url(img/github.png);
+}
+
+div img:hover{
+    width: 100%;
+    content:url("https://miviaje.com/wp-content/uploads/2017/12/landmannalaugar-en-islandia.jpg");
+}
+
+
