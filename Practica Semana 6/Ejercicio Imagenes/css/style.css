@@ -1,14 +1,22 @@
-
-div{
-	background-image: url('./img/');
+body{
+	background-color: gray;
 }
 
-img:hover{
+li {
+	list-style-type: none;
+}
+
+.grande{
+	width: 40%;
+	position: relative;
+	visibility: hidden;
+
+}
+
+a:hover .grande{
+	visibility: visible;
 	
-
 }
-
-.next{
-	width: 20px;
-	height: 20px;
+.peque{
+	width: 25%;
 }
