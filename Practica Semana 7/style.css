@@ -10,13 +10,28 @@
   to {right: 200px;}
 }
 @-webkit-keyframes yellow {
-  from {left: 0px;}
-  to {left: 200px;}
+  from {bottom-left: 0px;}
+  to {top-right: 200px;}
 }
 
 @-webkit-keyframes black {
   from {right: : 0px;}
   to {right: 200px;}
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200%, 0); }
+}
+
+@keyframes bounce-down-left {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(400px, -200%, 0); }
+}
+
+@keyframes bounce-down-right {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(-400px, -200%, 0); }
 }
 
 
@@ -28,7 +43,16 @@
 	background-color: red;
 	border-radius: 50%;
 	display: inline-block;
-	animation: red 5s infinite;
+  /*
+  -webkit-animation-name: bounce;
+  animation: red 5s infinite;*/
+
+
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
+
 }
 
 .circ-right-up{
@@ -41,9 +65,14 @@
 	border-radius: 50%;
 	right: 0;
 	animation: green 5s infinite;
+
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
 }
 
- .circ-left-down{
+.circ-left-down{
 
 	position: absolute;
 	height: 200px;
@@ -53,9 +82,14 @@
 	display: inline-block;
 	bottom: 0;
 	animation: yellow 5s infinite;
+
+  animation: bounce-down-left 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
 }
 
- .circ-right-down{
+.circ-right-down{
 
 	position: absolute;
 	
@@ -66,4 +100,13 @@
 	bottom: 0;
 	right: 0;
 	animation: black 5s infinite;
+
+  animation: bounce-down-right 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
 }
+
+
+
+
