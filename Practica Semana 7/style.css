@@ -24,20 +24,20 @@
   to   { transform: translate3d(0, 200%, 0); }
 }
 
-@keyframes bounce-down-left {
+@keyframes bounce-left-down {
   from { transform: translate3d(0, 0, 0);     }
   to   { transform: translate3d(400px, -200%, 0); }
 }
 
-@keyframes bounce-down-right {
+@keyframes bounce-right-down {
   from { transform: translate3d(0, 0, 0);     }
   to   { transform: translate3d(-400px, -200%, 0); }
 }
 
 
+
 .circ-left-up{
 
-	position: absolute;
 	height: 200px;
 	width: 200px;
 	background-color: red;
@@ -47,11 +47,12 @@
   -webkit-animation-name: bounce;
   animation: red 5s infinite;*/
 
-
-  animation: bounce 0.5s;
+  animation: bounce 1s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: infinite;
+
+
 
 }
 
@@ -66,7 +67,7 @@
 	right: 0;
 	animation: green 5s infinite;
 
-  animation: bounce 0.5s;
+  animation: bounce 1s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: infinite;
@@ -83,7 +84,7 @@
 	bottom: 0;
 	animation: yellow 5s infinite;
 
-  animation: bounce-down-left 0.5s;
+  animation: bounce-left-down 1s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: infinite;
@@ -101,7 +102,7 @@
 	right: 0;
 	animation: black 5s infinite;
 
-  animation: bounce-down-right 0.5s;
+  animation: bounce-right-down 1s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: infinite;
