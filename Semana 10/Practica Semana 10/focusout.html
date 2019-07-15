@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<form action="">
+		<h2>Focus Out</h2>
+		Enter your name: <input type="text" id="fout" onfocusout="myFunction()">
+	</form>
+	
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("fout");
+			x.value = x.value.toUpperCase();
+
+			x.style = x.style.color="red";
+		}
+	</script>
+
+
+
+
+	
+</body>
+</html>
