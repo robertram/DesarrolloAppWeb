@@ -72,6 +72,39 @@ for (var i = 1; i < 10; i++) {
 
 
 
+var lado=10;
+
+function imprimirLineaCompleta(lado){
+  for (var j=0; j<lado;j++){
+    Console.log("*");
+}
+}
+
+function imprimirLineaVacia(lado){
+  Console.log("*");
+  for(var j=0;j<lado-2;j++){
+    Console.log(" ");
+}
+Console.log("*");
+}
+
+function main(){
+        Console.log("De cuantos asteriscos desea el cuadrado?");
+        var size= prompt("Ingrese un numero","0");
+        
+        for(var i=0 ; i<size;i++){
+            if (i==0 || i==size-1){
+                imprimirLineaCompleta(size); 
+        }
+        else{
+                imprimirLineaVacia(size);
+        }
+        Console.log("\n");
+}
+}
+
+
+
 
 /*
 var lineas=2;
@@ -83,7 +116,15 @@ for(var i=0;i<lineas;i++)
                  console.log("*");
         }
 }*/
+function GetDate(){
+        var d = new Date();
+        var n = d.getDay();
+        Console.log(n);
+        return n;
+}
 
+GetDate();
+Console.log()
 
 
 

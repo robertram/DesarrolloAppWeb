@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<h2>Encontrar elementos por Nombre Etiquetas </h2>
+	<p>Este ejemplo muestra como usar el método <b>getElementByTagName</b> </p>
+
+	<p class="intro">Hola mundo</p>
+	<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam sunt minima nisi molestias similique numquam, commodi debitis eos nam natus atque exercitationem blanditiis, a, repellendus illum incidunt corporis explicabo non.</p>
+	<p id="demo">Claseeeeeeee</p>
+
+
+	<script>
+
+
+		var x = document.querySelectorAll("p.intro");
+		document.getElementById("demo").innerHTML = 
+		"El texto en el primer parrafo (index 0) es: "+ x[1].innerHTML;
+
+
+		/*var x = document.getElementsByClassName("intro");
+		document.getElementById("demo").innerHTML = 
+		"El texto en el primer parrafo (index 0) es: "+ x[1].innerHTML;*/
+
+		/*document.getElementById("demo").innerHTML = 
+		"El texto en el primer parrafo (index 0) es: "+ document.getElementsByClassName("intro")[0].innerHTML;*/
+
+	</script>
+	
+</body>
+</html>
